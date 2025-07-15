@@ -29,7 +29,7 @@ function AdminPage() {
   fetchMovies()
 }, [])
 
-  const categories = ["Action", "Comedy", "Drama", "Horror", "Sci-Fi", "Romance"]
+  const categories = ["All", "Hành động", "Tâm lý", "Kinh dị", "Khoa học viễn tưởng", "Tình cảm", "Hoạt hình"]
 
   const handleInputChange = (e) => {
     setFormData({
@@ -77,7 +77,7 @@ function AdminPage() {
     setFormData({
       title: movie.title,
       category: movie.category,
-      year: movie.year.toString(),
+      // year: movie.year.toString(),
       poster: movie.poster,
       videoUrl: movie.videoUrl,
     })
@@ -177,7 +177,6 @@ function AdminPage() {
                     name="poster"
                     value={formData.poster}
                     onChange={handleInputChange}
-                    placeholder="https://example.com/poster.jpg"
                   />
                 </div>
 
@@ -190,7 +189,6 @@ function AdminPage() {
                     value={formData.videoUrl}
                     onChange={handleInputChange}
                     required
-                    placeholder="https://example.com/video.mp4"
                   />
                 </div>
 
