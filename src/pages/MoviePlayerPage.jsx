@@ -1,5 +1,3 @@
-"use client"
-
 import { useState, useEffect } from "react"
 import { useParams, Link } from "react-router-dom"
 import "../components/MovieList.css"
@@ -14,7 +12,7 @@ function MoviePlayerPage() {
   const [newRating, setNewRating] = useState(0)
   const [isSubmitting, setIsSubmitting] = useState(false)
 
-  const currentUserId = "user123" // sau này lấy từ login
+  const currentUserId = "user123"
 
   useEffect(() => {
     const fetchMovie = async () => {
