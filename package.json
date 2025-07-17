@@ -5,8 +5,7 @@
   "scripts": {
     "build": "vite build",
     "dev": "vite",
-    "lint": "",
-    "start": "vite preview"
+    "start": "vite"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.9.1",
